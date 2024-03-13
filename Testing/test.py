@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-from GeneralHough import GenHough
+from HelensPython.Testing.GeneralHough import GenHough
 
 
 def test_small(image="test_images\\small.png"):

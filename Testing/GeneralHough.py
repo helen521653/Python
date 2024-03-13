@@ -2,7 +2,7 @@ import numpy as np
 import cv2 as cv
 import matplotlib.pyplot as plt
 
-fn = "test_images\\partly_showen.PNG"  # путь к файлу с картинкой
+fn = "test_images\\small.PNG"  # путь к файлу с картинкой
 
 
 def GenHough(image, rad=15):
