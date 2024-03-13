@@ -1,12 +1,12 @@
 import cv2
 import numpy as np
-from HoughCircle import CircleDetction
+from HoughCV import HoughCV
 from GeneralHough import GenHough
 
 # load the input images
-image = "test_images/small.PNG"
+image = "test_image/one_circle.png"
 img1 = GenHough(image)
-img2 = CircleDetction(image)
+img2 = HoughCV(image)
 
 
 # img1 = cv2.imread('panda.jpg')
@@ -27,9 +27,9 @@ def mse(img1, img2):
     return mse, diff
 
 
-error, diff = mse(img1, img2)
-print("Image matching Error between the two images:", error)
-
-cv2.imshow("difference", diff)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+# error, diff = mse(img1, img2)
+# print("Image matching Error between the two images:", error)
+#
+# cv2.imshow("difference", diff)
+# cv2.waitKey(0)
+# cv2.destroyAllWindows()
